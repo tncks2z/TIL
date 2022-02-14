@@ -1,16 +1,13 @@
 # Today I Learned 📒
-***
 - 좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록으로 남긴다.
 - Today I Learned인데 날짜를 표시하지 않는 이유는 조급해지지 않고 꾸준하기 위함이다.
 [MLP Notion](https://hphk.notion.site/hphk/Git-1-_A-22-02-09-22-02-11-3f4afeb98f784b7ead4a82f5aebd86de)을 보고 많은 도움을 얻었다.
 ## 나만의 작성규칙
----
 - 해당 문서를 다시 봤을 때, 추가적인 검색의 비용이 들지 않도록 자세히 기록한다.
 - 더 많은 공유를 원하는 기록은 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f)에 포스팅한다.
 - 쉴 땐 확실히 쉬고, contributions를 초록색으로 채우는 것에 집착하지 않는다.
 - reference를 명시하고, 원작자가 참고를 허용하는 자료만 사용한다.
 ## 분류
----
 ### Git, Who RU?
 - Git 기초
     - 디렉토리 만들기
