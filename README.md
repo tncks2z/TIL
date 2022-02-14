@@ -11,13 +11,13 @@
 ### Git, Who RU?
 - Git 기초
     - 디렉토리 만들기
-        1. 'Terminal'에서 디렉토리 생성 `mkdir \[폴더명]`
-        2. 해당 디렉토리로 이동 `cd \[폴더명]`
+        1. 'Terminal'에서 디렉토리 생성 `mkdir [폴더명]`
+        2. 해당 디렉토리로 이동 `cd [폴더명]`
         3. VISUALCODE 열기 `code .`
     - 기록남기기
         1. md파일 또는 txt 파일 등을 수정하여 저장하기(김멀캠 옷 입히기)
-        2. `git add .` 또는 `git add \[특정파일]` (김멀캠 무대에 세우기)
-        3. `git commit -m " 커밋내용 "` (김멀캠 사진작가에게 사진 찍히기, 커밋내용을 통해 버전확인)
+        2. `git add .` 또는 `git add [특정파일]` (김멀캠 무대에 세우기)
+        3. `git commit -m " 커밋메시지 "` (김멀캠 사진작가에게 사진 찍히기, 커밋 메시지를 통해 버전확인)
     - GitHub에 연동
         1. GitHub에서 Repositories 생성
         2. `git remote ~` 하는 부분 복사 후 VisualCode 에 붙여넣기
