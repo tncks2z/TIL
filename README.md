@@ -1,4 +1,4 @@
-# Today I Learned ⛪️
+# Today I Learned 📒
 ***
 - 좋은 개발자가 되기 위해 하루동안 학습한 내용이나 개발관련 경험들을 기록으로 남긴다.
 - Today I Learned인데 날짜를 표시하지 않는 이유는 조급해지지 않고 꾸준하기 위함이다.
@@ -11,7 +11,7 @@
 - reference를 명시하고, 원작자가 참고를 허용하는 자료만 사용한다.
 ## 분류
 ---
-Git, Who RU?
+### Git, Who RU?
 - Git 기초
     - 디렉토리 만들기
         1. 'Terminal'에서 디렉토리 생성(mkdir \[폴더명])
@@ -30,4 +30,5 @@ Git, Who RU?
         - .gitignore 파일을 만들고 그곳에서 ignore할 파일을 추가
         - 반드시 파일 명을 ".gitignore" 이라고 해야됨 -> git에서 정한 문법
     - clone
-        - 
+        - clone 이란 상대방이 만든 Repositories를 그대로 복사해서 가져오는 것
+        - clone은 허가가 필요하함
