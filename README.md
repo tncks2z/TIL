@@ -15,22 +15,43 @@
 	* 디렉토리 만들기
 		1. 'Terminal'에서 디렉토리 생성 `mkdir [폴더명]`
 		2. 해당 디렉토리로 이동 `cd [폴더명]`
-		3. VISUALCODE 열기 `code .`
+		3. VISUAL STUDIO CODE 열기 `code .`
+	- 초기설정
+		- GitHub 가입시 쓴 닉네임과 메일주소를 VISUAL STUDIO CODE에 기입
+		```
+		git config —global user.name “이름”
+		git config —global user.email “메일 주소”
+		```
+		- Git에게 디렉토리에 대한 관리를 명령
+		```
+		git init
+		```
 	* 기록남기기
 		1. md파일 또는 txt 파일 등을 수정하여 저장하기(김멀캠 옷 입히기)
 		2. `git add .` 또는 `git add [특정파일]` (김멀캠 무대에 세우기)
 		3. `git commit -m " 커밋메시지 "` (김멀캠 사진작가에게 사진 찍히기, 커밋 메시지를 통해 버전확인)
-	* GitHub에 연동
+	* GitHub에 연동 및 업로드
 		1. GitHub에서 New Repositories 생성
-		2. `git remote ~` 하는 부분 복사 후 VisualCode 에 붙여넣기
+		2. `git remote ~` 하는 부분 복사 후 Visual STUDIO Code 에 붙여넣기 (고속도로 만들기)
 		3. `git push origin master` (업로드)
 * Git 기초2
 	* ignore
 		* .gitignore 파일을 만들고 그곳에서 ignore할 파일을 추가
 		* 반드시 파일 명을 ".gitignore" 이라고 해야됨 -> git에서 정한 문법
-	* clone
-		* clone 이란 상대방이 만든 Repositories를 그대로 복사해서 가져오는 것
-		* clone은 허가가 필요함
+	* clone, pull
+		- 컴퓨터1에서 작업한 내용을 컴퓨터2로 받아올 때
+		* 상대방이 만든 Repositories를 그대로 가져오고 싶을때 (허가 or 초대가 필요)
+		* clone
+			```
+			git clone [가져오고 싶은 Repositories] [명칭할 이름]
+			```
+			- clone은 반드시 홈 디렉토리에서 실행할 것(나는 suchan)
+		- pull
+			```
+			git pull origin master
+			```
+- Git 기초3
+	- 
 
 ### DL_1
 * DL은 `사람의 신경망`을 수치화를 이용해서 구현한 `인공 신경망`으로 학습하는 방법
