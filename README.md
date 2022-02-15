@@ -19,7 +19,7 @@
         2. `git add .` 또는 `git add [특정파일]` (김멀캠 무대에 세우기)
         3. `git commit -m " 커밋메시지 "` (김멀캠 사진작가에게 사진 찍히기, 커밋 메시지를 통해 버전확인)
     - GitHub에 연동
-        1. GitHub에서 Repositories 생성
+        1. GitHub에서 New Repositories 생성
         2. `git remote ~` 하는 부분 복사 후 VisualCode 에 붙여넣기
         3. `git push origin master` (업로드)
 - Git 기초2
@@ -28,4 +28,15 @@
         - 반드시 파일 명을 ".gitignore" 이라고 해야됨 -> git에서 정한 문법
     - clone
         - clone 이란 상대방이 만든 Repositories를 그대로 복사해서 가져오는 것
-        - clone은 허가가 필요하함
+        - clone은 허가가 필요함
+
+### DL_1
+- DL은 `사람의 신경망`을 수치화를 이용해서 구현한 `인공 신경망`으로 학습하는 방법
+#### 구현
+- `XOR GATE`를 통해 컴퓨터(반도체)가 어떻게 구성되는 지를 알아보자
+    - [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+- `신경망`은 어떻게 구성되는지 알아보자
+    - [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+- MNIST를 활용한 실습
+    - [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+    - 시간을 단축시키기 위해, `batch`를 사용해보자
