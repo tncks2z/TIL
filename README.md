@@ -28,7 +28,7 @@
 		```
 	* 기록남기기
 		1. md파일 또는 txt 파일 등을 수정하여 저장하기(김멀캠 옷 입히기)
-		2. `git add .` 또는 `git add [특정파일]` (김멀캠 무대에 세우기)
+		2. `git add .` 또는 `git add [특정파일]` (김멀캠 무대에 세우기 -> Staging Area에 올리기)
 		3. `git commit -m " 커밋메시지 "` (김멀캠 사진작가에게 사진 찍히기, 커밋 메시지를 통해 버전확인)
 	* GitHub에 연동 및 업로드
 		1. GitHub에서 New Repositories 생성
@@ -51,7 +51,92 @@
 			git pull origin master
 			```
 - Git 기초3
-	- 
+	- branch
+		- 하나의 프로젝트를 여러 팀원들이 자신의 이름(branch)를 만들어서, 수정하고, 공유하는 기능
+		- 장점
+			- branch는 사용자 독립공간을 사용하기 때문에 원본(master)을 유지할 수 있음
+			- 여러 팀원들이 한 프로젝트에 참여할 때, 매우 효율적으로 관리 가능
+		- 하나의 큰 줄기에 여러 잔가지(branch)를 치는 것처럼 하나의 주제에 다양한 버전을 만들 수 있음
+			- 다양한 버전의 수정 가능
+				- (ex. `master`는 iOS, `branch`는 /iOS15/, /iOS14/, /iOS13/ -> 각 버전 별로 수정하여 업데이트 가능 => /iOS 14.2.1/, /iOS 13.3.1/)
+		- 생성
+			```
+			git branch <브랜치 이름>
+			```
+		- 조회
+			```
+			git branch
+			```
+		- 삭제
+			```
+			git branch -d <브랜치 이름> (병합된 branch만 삭제)
+			git branch -D <브랜치 이름> (병합되지 않은 branch도 삭제 -> 웬만하면 사용X)
+			```
+		- 이동
+			```
+			git switch <브랜치 이름>
+			git branch -c <브랜치 이름> (새로운 branch를 생성과 동시에 이동)
+			```
+		- 병합
+			- branch에서 수정한 내용을 master에 반영
+			- 합치고 싶어하는 branch로 이동하여 merge 사용
+				- branch1에 branch2를 합치고 싶은 경우
+					```
+					git switch branch1
+					git merge branch2
+					```
+				- branch2에 branch1을 합치고 싶은 경우
+					```
+					git switch branch2
+					git merge branch1
+					```
+			- 병합이 완료되면 합쳐진 branch는 삭제를 한다.
+				- branch1에 branch2를 합친 경우
+					```
+					git branch -d branch2
+					```
+				- branch2에 branch1을 합친 경우
+					```
+					git branch -d branch1
+					```
+	- log
+		- 해당 git파일의 모든 commit을 보여줌
+			- Author와 commit한 시간까지 보여줌
+		- 해당 git파일의 branch가 있을 경우 branch도 같이 보여줌
+		- 한줄로 간단하게 보여주기
+			- 커밋 메시지만 보여줌
+			```
+			git log --oneline
+			```
+		- branch가 어디에서부터 생성 됐는지 그림으로 보여주기
+			```
+			git log --oneline --all --graph
+			```
+- Git 심화1
+	- restore <파일 이름>
+		- git이 관리하고 있는 파일을 수정 전으로 되돌림
+		```
+		git restore <파일 이름>
+		```
+		- 한번 restore로 되돌리면, restore 하기 전으로는 복원 불가능
+	- rm --cached <파일 이름>
+		- `git add <파일 이름>` 한 파일의 add 상태를 취소하고 싶은 경우
+		```
+		touch test.txt
+		git add test.txt
+		git rm --cached test.txt
+		```
+	- restore --staged <파일 이름>
+		- `git commit -m "메시지"` 한 파일의 commit 상태를 취소하고 싶은 경우
+		```
+		touch test.txt
+		git add test.txt
+		git commit -m "first commit"
+		git restore --staged test.txt
+		```
+	
+
+
 
 ### DL
 * DL은 `사람의 신경망`을 수치화를 이용해서 구현한 `인공 신경망`으로 학습하는 방법
