@@ -53,17 +53,42 @@
 - Git 기초3
 	- 
 
-### DL_1
+### DL
 * DL은 `사람의 신경망`을 수치화를 이용해서 구현한 `인공 신경망`으로 학습하는 방법
 * `XOR GATE`를 통해 컴퓨터(반도체)가 어떻게 구성되는 지를 알아보자
 	* [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 * `신경망(perceptron)`은 어떻게 구성되는지 알아보자
 	* 단일 Perceptron
 		* [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
-	* Sigmoid 함수(값들을 0~1 사이로 연결성 있게 표현)
+	* 활성화 함수(Activation Function)
+		* Sigmoid 함수(값들을 0~1 사이로 연결성 있게 표현)
 		* 값들을 확률로 표현하기 위해 사용
 	* MultiLayer의 구성
 		* [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
-* MNIST를 활용한 실습
-	* [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
-	* 시간을 단축시키기 위해, `batch`를 사용해보자
+	* MNIST를 활용한 실습
+		* [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+		* Batch
+			* epoch(전체)의 반대말
+			* 데이터를 batch_size만큼 쪼개서 한번에 입력
+				* (ex.`x_train`갯수가 100개, `batch_size`가 10 이라면 데이터를 10개를 한번에 train함.)
+				* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f)
+* Cross Entropy
+	* 딥러닝의 목적함수
+	* 예측값과 라벨 값의 차이(loss 값 => error 크기))를 나타냄 -> 낮을 수록 분류가 잘된 것
+	* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+* 편미분
+	* Gradient Descent(경사 하강)
+		* Cross Entropy(loos 값)를 낮추는 것 = 그래프의 기울기(순간 변화량)가 감소하는 것
+	* 최적화
+		* 편미분 값이 감소하는 방향으로 지속적으로 W를 업데이트 -> 기울기가 0일 때, stop
+		* W = W - 학습률 * 편미분값
+* 학습 알고리즘 구현
+	1. `미니 배치` : 훈련 데이터 중 일부를 무작위로 batch_size만큼 가져옴.
+	2. `기울기 산출` : `미니 배치`의 loss 값을 줄이기 위해 각 W 파라미터의 기울기를 구함
+	3. `매개변수 갱신` : W 매개변수를 기울기 방향(줄어드는 쪽)으로 갱신
+	4. 1~3단계 반복
+	* 단일 신경망 클래스 구현
+		- [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+	* 2층 신경망 클래스 구현
+		- [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
+
