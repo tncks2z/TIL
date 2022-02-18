@@ -156,14 +156,16 @@
 			* epoch(전체)의 반대말
 			* 데이터를 batch_size만큼 쪼개서 한번에 입력
 				* (ex.`x_train`갯수가 100개, `batch_size`가 10 이라면 데이터를 10개를 한번에 train함.)
-				* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f)
+				* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 * Cross Entropy
-	* 딥러닝의 목적함수
+	* 딥러닝의 손실(loss)함수
 	* 예측값과 라벨 값의 차이(loss 값 => error 크기))를 나타냄 -> 낮을 수록 분류가 잘된 것
 	* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 * 편미분
 	* Gradient Descent(경사 하강)
-		* Cross Entropy(loos 값)를 낮추는 것 = 그래프의 기울기(순간 변화량)가 감소하는 것
+		* 딥러닝의 목적함수
+		* Cross Entropy(loss 값)를 낮추는 것 = 그래프의 기울기(순간 변화량)가 감소하는 것
+		* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 	* 최적화
 		* 편미분 값이 감소하는 방향으로 지속적으로 W를 업데이트 -> 기울기가 0일 때, stop
 		* W = W - 학습률 * 편미분값
