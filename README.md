@@ -120,7 +120,7 @@
 		```
 		- 한번 restore로 되돌리면, restore 하기 전으로는 복원 불가능
 	- rm --cached <파일 이름>
-		- `git add <파일 이름>` 한 파일의 add 상태를 취소하고 싶은 경우
+		- `touch <파일 이름>` 후에 `git add <파일 이름>` 한 파일의 add 상태를 취소하고 싶은 경우
 		```
 		touch test.txt
 		git add test.txt
