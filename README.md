@@ -135,7 +135,11 @@
 		git restore --staged test.txt
 		```
 	
-
+### Algorithm
+- print
+	- `end=` 파라미터는 최종적으로 어떤 값을 주냐
+	- `sep=` 파라미터는 각각의 값들 사이사이에 어떤 값을 주냐
+	- 기본적으로 `end=\n` `sep=" "` 값이 내장
 
 
 ### DL
@@ -159,7 +163,7 @@
 				* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 * Cross Entropy
 	* 딥러닝의 손실(loss)함수
-	* 예측값과 라벨 값의 차이(loss 값 => error 크기))를 나타냄 -> 낮을 수록 분류가 잘된 것
+	* 예측값과 라벨 값의 차이(loss 값 => error 크기)를 나타냄 -> 낮을 수록 분류가 잘된 것
 	* 코드는 [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 * 편미분
 	* Gradient Descent(경사 하강)
