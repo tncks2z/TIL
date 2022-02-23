@@ -141,6 +141,18 @@
 	- `sep=` 파라미터는 각각의 값들 사이사이에 어떤 값을 주냐
 	- 기본적으로 `end=\n` `sep=" "` 값이 내장
 
+- list
+	- List Comprehension을 이용한 2중 for문
+		- `[list(map(input().split()) for _ in range(n)`
+
+- dictionary
+	- `key`를 `hash 함수`를 통해서 `hash 테이블`에 `value`로 저장
+		- 시간 복잡도는 O(1) -> O(n)이 아니기 때문에 속도가 매우 빠름
+	- `[딕셔너리].get(key)`
+		- 해당 key가 없을 경우, `None`을 반환
+		- `[딕셔너리].get(key, " 메시지 ")`
+			- 해당 key가 없을 경우, 입력한 메시지를 반환
+
 
 ### DL
 * DL은 `사람의 신경망`을 수치화를 이용해서 구현한 `인공 신경망`으로 학습하는 방법
