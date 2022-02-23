@@ -1,6 +1,6 @@
 n = 8
 
-chessboard = [list(input())) for _ in range(n)]
+chessboard = [list(input()) for _ in range(n)]
 
 cnt = 0
 
