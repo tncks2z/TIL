@@ -1,7 +1,6 @@
-n,m = 8,8
+n = 8
 
-chessboard = [list(map(str,input())) for _ in range(n)]
-whiteboard = []
+chessboard = [list(input())) for _ in range(n)]
 
 cnt = 0
 
