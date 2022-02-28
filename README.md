@@ -195,5 +195,5 @@
 	* 2층 신경망 클래스 학습 구현
 		- [개인 Notion](https://www.notion.so/1ea51850579a44e389baf074f68eaf8f) 참고
 - Back Propagation
-	- 기존의 Foward연산과는 반대로 뒤에서 앞방향으로 연산
+	- 기존의 Foward 연산과는 반대로 뒤에서 앞방향으로 연산
 	- '+'는 그냥 통과, '*'는 뒤집어서 통과
