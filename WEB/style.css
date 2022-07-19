@@ -1,0 +1,39 @@
+body {
+    margin: 10px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    font-size: 45px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+}
+.title {
+    color: rgb(5, 73, 141);
+}
+#grid ul {
+    border-right: 1px solid gray;
+    width: 90px;
+    margin: 0;
+    padding-left: 32px;
+    padding-top: 15px;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+}
+@media(max-width : 800px){
+    #grid {
+        display: block;
+    }
+    #grid ul {
+        border-right: none;
+    }
+    h1 {
+        border-bottom: none;
+    }
+}
